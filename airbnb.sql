@@ -32,6 +32,7 @@ CREATE TABLE listings (
     neighbourhood_group_cleansed STRING,
     latitude NUMERIC,
     longitude NUMERIC,
+    property_type STRING,
     room_type STRING,
     accommodates NUMERIC,
     bathrooms NUMERIC,
@@ -60,7 +61,7 @@ CREATE TABLE listings (
     number_of_reviews_l30d NUMERIC,
     first_review STRING,
     last_review STRING,
-    reviews_scores_rating NUMERIC,
+    review_scores_rating NUMERIC,
     review_scores_accuracy NUMERIC,
     review_scores_cleanliness NUMERIC,
     review_scores_checkin NUMERIC,
@@ -71,7 +72,7 @@ CREATE TABLE listings (
     instant_bookable STRING,
     calculated_host_listings_count NUMERIC,
     calculated_host_listings_count_entire_homes NUMERIC,
-    calculated_host_listings_count_private_homes NUMERIC,
+    calculated_host_listings_count_private_rooms NUMERIC,
     calculated_host_listings_count_shared_rooms NUMERIC,
     reviews_per_month NUMERIC
 );
