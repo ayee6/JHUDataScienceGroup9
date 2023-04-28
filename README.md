@@ -6,11 +6,18 @@
     - Vy Vu
     - Jack Mentch
 
+## **Exploratory Data Analysis:** 
+
+- [ ] neighborhoods
+- [x] reviews <i>(in progress @Jack)</i>
+- [ ] listings <i>(in progress @Vy)</i>
+- [ ] calendar
 
 <br>
 
 ## **airbnb.db** 
 ###### Database that contains **4 Tables**: Neighbourhoods, Calendar, Reviews, and  Listings
+
 ---
 
 
