@@ -1,6 +1,7 @@
 DROP TABLE IF EXISTS listings;
 CREATE TABLE listings (
-    id INTEGER PRIMARY KEY,
+    source_name STRING,
+    id INTEGER,
     listing_url STRING,
     scrape_id STRING,
     last_scraped STRING,
@@ -74,7 +75,16 @@ CREATE TABLE listings (
     calculated_host_listings_count_entire_homes NUMERIC,
     calculated_host_listings_count_private_rooms NUMERIC,
     calculated_host_listings_count_shared_rooms NUMERIC,
-    reviews_per_month NUMERIC
+    reviews_per_month NUMERIC,
+    Distance_Smithsonian NUMERIC,
+    Distance_Lincoln NUMERIC,
+    Distance_Capitol NUMERIC,
+    Distance_White_House NUMERIC,
+    Distance_Library_Congress NUMERIC,
+    Distance_National_Park NUMERIC,
+    Distance_National_Zoo NUMERIC,
+    Distance_Railway NUMERIC,
+    Distance_Mcpherson NUMERIC
 );
 
 DROP TABLE IF EXISTS host;
@@ -85,7 +95,8 @@ CREATE TABLE host (
 
 DROP TABLE IF EXISTS reviews;
 CREATE TABLE reviews (
-    id INTEGER PRIMARY KEY,
+    source_name STRING,
+    id INTEGER,
     reviewer_name STRING,
     reviewer_id STRING,
     date STRING,
@@ -101,6 +112,7 @@ CREATE TABLE neighborhoods (
 
 DROP TABLE IF EXISTS calendar;
 CREATE TABLE calendar (
+    source_name STRING,
     listing_id STRING,
     date STRING,
     available STRING,

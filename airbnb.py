@@ -8,22 +8,61 @@ neighborHoodWorkbook = openpyxl.load_workbook('neighbourhoods.xlsx')
 for row in list(neighborHoodWorkbook.active.values)[1:]:
     cursor.execute('INSERT into neighborhoods(name) values(?)', (row[1],))
 
-calendarWorkbook = openpyxl.load_workbook('calendar.xlsx')
+calendarWorkbook = openpyxl.load_workbook('calendar_3_2023.xlsx')
 for row in list(calendarWorkbook.active.values)[1:]:
-    cursor.execute('INSERT into calendar(listing_id, date, available, price,\
+    cursor.execute('INSERT into calendar(source_name, listing_id, date, available, price,\
                    adjusted_price, minimum_nights, maximum_nights)\
-                   values(?, ?, ?, ?, ?, ?, ?)',\
-                   (row[0],row[1], row[2], row[3], row[4], row[5], row[6]))
+                   values(?, ?, ?, ?, ?, ?, ?, ?)',\
+                   (row[0],row[1], row[2], row[3], row[4], row[5], row[6], row[7]))
+    
+calendarWorkbook = openpyxl.load_workbook('calendar_6_2022.xlsx')
+for row in list(calendarWorkbook.active.values)[1:]:
+    cursor.execute('INSERT into calendar(source_name, listing_id, date, available, price,\
+                   adjusted_price, minimum_nights, maximum_nights)\
+                   values(?, ?, ?, ?, ?, ?, ?, ?)',\
+                   (row[0],row[1], row[2], row[3], row[4], row[5], row[6], row[7]))
+    
+calendarWorkbook = openpyxl.load_workbook('calendar_9_2022.xlsx')
+for row in list(calendarWorkbook.active.values)[1:]:
+    cursor.execute('INSERT into calendar(source_name, listing_id, date, available, price,\
+                   adjusted_price, minimum_nights, maximum_nights)\
+                   values(?, ?, ?, ?, ?, ?, ?, ?)',\
+                   (row[0],row[1], row[2], row[3], row[4], row[5], row[6], row[7]))
+    
+calendarWorkbook = openpyxl.load_workbook('calendar_12_2022.xlsx')
+for row in list(calendarWorkbook.active.values)[1:]:
+    cursor.execute('INSERT into calendar(source_name, listing_id, date, available, price,\
+                   adjusted_price, minimum_nights, maximum_nights)\
+                   values(?, ?, ?, ?, ?, ?, ?, ?)',\
+                   (row[0],row[1], row[2], row[3], row[4], row[5], row[6], row[7]))
 
-reviewsWorkbook = openpyxl.load_workbook('reviews.xlsx')
+reviewsWorkbook = openpyxl.load_workbook('reviews_3_2023.xlsx')
 for row in list(reviewsWorkbook.active.values)[1:]:
-    cursor.execute('INSERT into reviews(id, listing_id, date, reviewer_name,\
-                   reviewer_id, comments) values(?, ?, ?, ?, ?, ?)',\
-                   (row[1],row[0], row[2], row[4], row[3], row[5]))
+    cursor.execute('INSERT into reviews(source_name, id, listing_id, date, reviewer_name,\
+                   reviewer_id, comments) values(?, ?, ?, ?, ?, ?, ?)',\
+                   (row[0], row[2],row[1], row[3], row[5], row[4], row[6]))
 
-listingsWorkbook = openpyxl.load_workbook('listings.xlsx')
+reviewsWorkbook = openpyxl.load_workbook('reviews_6_2022.xlsx')
+for row in list(reviewsWorkbook.active.values)[1:]:
+    cursor.execute('INSERT into reviews(source_name, id, listing_id, date, reviewer_name,\
+                   reviewer_id, comments) values(?, ?, ?, ?, ?, ?, ?)',\
+                   (row[0], row[2],row[1], row[3], row[5], row[4], row[6]))
+
+reviewsWorkbook = openpyxl.load_workbook('reviews_9_2022.xlsx')
+for row in list(reviewsWorkbook.active.values)[1:]:
+    cursor.execute('INSERT into reviews(source_name, id, listing_id, date, reviewer_name,\
+                   reviewer_id, comments) values(?, ?, ?, ?, ?, ?, ?)',\
+                   (row[0], row[2],row[1], row[3], row[5], row[4], row[6]))
+
+reviewsWorkbook = openpyxl.load_workbook('reviews_12_2022.xlsx')
+for row in list(reviewsWorkbook.active.values)[1:]:
+    cursor.execute('INSERT into reviews(source_name, id, listing_id, date, reviewer_name,\
+                   reviewer_id, comments) values(?, ?, ?, ?, ?, ?, ?)',\
+                   (row[0], row[2],row[1], row[3], row[5], row[4], row[6]))
+
+listingsWorkbook = openpyxl.load_workbook('listings_combine.xlsx')
 for row in list(listingsWorkbook.active.values)[1:]:
-    cursor.execute('INSERT into listings(id, listing_url, scrape_id,\
+    cursor.execute('INSERT into listings(source_name, id, listing_url, scrape_id,\
                    last_scraped, source, name, description,\
                    neighborhood_overview, picture_url, host_id, host_url,\
                    host_name, host_since, host_location, host_about,\
@@ -49,11 +88,14 @@ for row in list(listingsWorkbook.active.values)[1:]:
                    calculated_host_listings_count,\
                    calculated_host_listings_count_entire_homes,\
                    calculated_host_listings_count_private_rooms,\
-                   calculated_host_listings_count_shared_rooms, reviews_per_month)\
+                   calculated_host_listings_count_shared_rooms, reviews_per_month, \
+                   Distance_Smithsonian, Distance_Lincoln, Distance_Capitol,\
+                   Distance_White_House, Distance_Library_Congress, Distance_National_Park,\
+                   Distance_National_Zoo, Distance_Railway, Distance_Mcpherson)\
                    values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,\
                    ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,\
                    ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,\
-                   ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
+                   ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
                    (row[0],row[1], row[2], row[3], row[4], row[5], row[6], row[7],\
                     row[8], row[9], row[10],row[11], row[12], row[13], row[14],\
                     row[15], row[16], row[17], row[18], row[19], row[20],row[21],\
@@ -64,7 +106,8 @@ for row in list(listingsWorkbook.active.values)[1:]:
                     row[50], row[51], row[52], row[53], row[54], row[55], row[56],\
                     row[57], row[58], row[59], row[60], row[61], row[62], row[63],\
                     row[64], row[65], row[66], row[67], row[68], row[69], row[70],\
-                    row[71], row[72], row[73], row[74]))
+                    row[71], row[72], row[73], row[74], row[75], row[76], row[77],\
+                    row[78], row[79], row[80], row[81], row[82], row[83], row[84]))
 
 connection.commit()
 connection.close()
