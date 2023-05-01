@@ -18,6 +18,7 @@ file.close()
 # Load reviews in Mar 2023
 with open('datasets/reviews_3_2023.csv', 'r', encoding='utf-8') as file:
     csvfile = csv.reader(file)
+    header = next(csvfile)
     for row in csvfile:
         cursor.execute('INSERT INTO reviews VALUES(:source_name, :listing_id, :id, :date, :reviewer_id, :reviewer_name, :comments)',\
                         {'source_name': 'reviews_3_2023', 'listing_id': row[0], 'id': row[1], 'date': row[2], 'reviewer_id': row[3], 'reviewer_name': row[4], 'comments': row[5]})
@@ -27,6 +28,7 @@ file.close()
 # Load reviews in Dec 2022
 with open('datasets/reviews_12_2022.csv', 'r', encoding='utf-8') as file:
     csvfile = csv.reader(file)
+    header = next(csvfile)
     for row in csvfile:
         cursor.execute('INSERT INTO reviews VALUES(:source_name, :listing_id, :id, :date, :reviewer_id, :reviewer_name, :comments)',\
                         {'source_name': 'reviews_12_2022', 'listing_id': row[0], 'id': row[1], 'date': row[2], 'reviewer_id': row[3], 'reviewer_name': row[4], 'comments': row[5]})
@@ -36,6 +38,7 @@ file.close()
 # Load reviews in Sep 2022
 with open('datasets/reviews_9_2022.csv', 'r', encoding='utf-8') as file:
     csvfile = csv.reader(file)
+    header = next(csvfile)
     for row in csvfile:
         cursor.execute('INSERT INTO reviews VALUES(:source_name, :listing_id, :id, :date, :reviewer_id, :reviewer_name, :comments)',\
                         {'source_name': 'reviews_9_2022', 'listing_id': row[0], 'id': row[1], 'date': row[2], 'reviewer_id': row[3], 'reviewer_name': row[4], 'comments': row[5]})
@@ -45,6 +48,7 @@ file.close()
 # Load reviews in Jun 2022
 with open('datasets/reviews_6_2022.csv', 'r', encoding='utf-8') as file:
     csvfile = csv.reader(file)
+    header = next(csvfile)
     for row in csvfile:
         cursor.execute('INSERT INTO reviews VALUES(:source_name, :listing_id, :id, :date, :reviewer_id, :reviewer_name, :comments)',\
                         {'source_name': 'reviews_6_2022', 'listing_id': row[0], 'id': row[1], 'date': row[2], 'reviewer_id': row[3], 'reviewer_name': row[4], 'comments': row[5]})
@@ -54,6 +58,7 @@ file.close()
 # # Load calendar in Mar 2023
 with open('datasets/calendar_3_2023.csv', 'r', encoding='utf-8') as file:
     csvfile = csv.reader(file)
+    header = next(csvfile)
     for row in csvfile:
         cursor.execute('INSERT INTO calendar VALUES(:source_name, :listing_id, :date, :available, :price, :adjusted_price, :minimum_nights, :maximum_nights)',\
                         {'source_name': 'calendar_3_2023', 'listing_id': row[0], 'date': row[1], 'available': row[2], 'price': row[3], \
@@ -64,6 +69,7 @@ file.close()
 # Load calendar in Dec 2022
 with open('datasets/calendar_12_2022.csv', 'r', encoding='utf-8') as file:
     csvfile = csv.reader(file)
+    header = next(csvfile)
     for row in csvfile:
         cursor.execute('INSERT INTO calendar VALUES(:source_name, :listing_id, :date, :available, :price, :adjusted_price, :minimum_nights, :maximum_nights)',\
                         {'source_name': 'calendar_12_2022', 'listing_id': row[0], 'date': row[1], 'available': row[2], 'price': row[3], \
@@ -74,6 +80,7 @@ file.close()
 # Load calendar in Sep 2022
 with open('datasets/calendar_9_2022.csv', 'r', encoding='utf-8') as file:
     csvfile = csv.reader(file)
+    header = next(csvfile)
     for row in csvfile:
         cursor.execute('INSERT INTO calendar VALUES(:source_name, :listing_id, :date, :available, :price, :adjusted_price, :minimum_nights, :maximum_nights)',\
                         {'source_name': 'calendar_9_2022', 'listing_id': row[0], 'date': row[1], 'available': row[2], 'price': row[3], \
@@ -84,6 +91,7 @@ file.close()
 # Load calendar in Jun 2022
 with open('datasets/calendar_6_2022.csv', 'r', encoding='utf-8') as file:
     csvfile = csv.reader(file)
+    header = next(csvfile)
     for row in csvfile:
         cursor.execute('INSERT INTO calendar VALUES(:source_name, :listing_id, :date, :available, :price, :adjusted_price, :minimum_nights, :maximum_nights)',\
                         {'source_name': 'calendar_6_2022', 'listing_id': row[0], 'date': row[1], 'available': row[2], 'price': row[3], \
@@ -94,6 +102,7 @@ file.close()
 # Load listings in Mar 2023
 with open('datasets/listings_3_2023.csv', 'r', encoding='utf-8') as file:
     csvfile = csv.reader(file)
+    header = next(csvfile)
     for row in csvfile:
         cursor.execute('INSERT INTO listings VALUES(:source_name, :id, :listing_url, :scrape_id, :last_scraped, :source, :name, :description, :neighborhood_overview, \
                        :picture_url, :host_id, :host_url, :host_name, :host_since, :host_location, :host_about, :host_response_time, :host_response_rate, \
@@ -129,6 +138,7 @@ file.close()
 # Load listings in Dec 2022
 with open('datasets/listings_12_2022.csv', 'r', encoding='utf-8') as file:
     csvfile = csv.reader(file)
+    header = next(csvfile)
     for row in csvfile:
         cursor.execute('INSERT INTO listings VALUES(:source_name, :id, :listing_url, :scrape_id, :last_scraped, :source, :name, :description, :neighborhood_overview, \
                        :picture_url, :host_id, :host_url, :host_name, :host_since, :host_location, :host_about, :host_response_time, :host_response_rate, \
@@ -164,6 +174,7 @@ file.close()
 # Load listings in Sep 2022
 with open('datasets/listings_9_2022.csv', 'r', encoding='utf-8') as file:
     csvfile = csv.reader(file)
+    header = next(csvfile)
     for row in csvfile:
         cursor.execute('INSERT INTO listings VALUES(:source_name, :id, :listing_url, :scrape_id, :last_scraped, :source, :name, :description, :neighborhood_overview, \
                        :picture_url, :host_id, :host_url, :host_name, :host_since, :host_location, :host_about, :host_response_time, :host_response_rate, \
@@ -199,6 +210,7 @@ file.close()
 # Load listings in Jun 2022
 with open('datasets/listings_6_2022.csv', 'r', encoding='utf-8') as file:
     csvfile = csv.reader(file)
+    header = next(csvfile)
     for row in csvfile:
         cursor.execute('INSERT INTO listings VALUES(:source_name, :id, :listing_url, :scrape_id, :last_scraped, :source, :name, :description, :neighborhood_overview, \
                        :picture_url, :host_id, :host_url, :host_name, :host_since, :host_location, :host_about, :host_response_time, :host_response_rate, \
