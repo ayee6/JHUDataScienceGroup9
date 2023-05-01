@@ -8,10 +8,9 @@ cursor = connection.cursor()
 # Load neighborhoods file
 with open('datasets/neighbourhoods.csv', 'r', encoding='utf-8') as file:
     csvfile = csv.reader(file)
-    group_id = [row for row in csvfile]
     for row in csvfile:
-        cursor.execute('INSERT INTO neighborhoods VALUES(:id, :name)',\
-                        {'id': group_id, 'name': row[1]})
+        name = row[1]
+        cursor.execute('INSERT INTO neighborhoods (name) VALUES (?)', (name,))
 file.close()
 
 
