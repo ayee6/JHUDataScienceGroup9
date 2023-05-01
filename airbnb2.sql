@@ -87,12 +87,12 @@ CREATE TABLE host (
 DROP TABLE IF EXISTS reviews;
 CREATE TABLE reviews (
     source_name STRING,
+    listing_id INTEGER,
     id INTEGER,
-    reviewer_name STRING,
-    reviewer_id STRING,
     date STRING,
-    comments STRING,
-    listing_id INTEGER
+    reviewer_id STRING,
+    reviewer_name STRING,
+    comments STRING
 );
 
 DROP TABLE IF EXISTS neighborhoods;
