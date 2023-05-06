@@ -237,7 +237,7 @@ with open('datasets/listings_6_2022.csv', 'r', encoding='utf-8') as file:
                         'calendar_last_scraped': row[54], 'number_of_reviews': row[55], 'number_of_reviews_ltm': row[56], 'number_of_reviews_l30d': row[57], \
                         'first_review': row[58], 'last_review': row[59], 'review_scores_rating': row[60], 'review_scores_accuracy': row[61], 'review_scores_cleanliness': row[62], \
                         'review_scores_checkin': row[63], 'review_scores_communication': row[64], 'review_scores_location': row[65], 'review_scores_value': row[66], \
-                        'license': row[67], 'instant_bookable': row[69], 'calculated_host_listings_count': row[69], 'calculated_host_listings_count_entire_homes': row[70], \
+                        'license': row[67], 'instant_bookable': row[68], 'calculated_host_listings_count': row[69], 'calculated_host_listings_count_entire_homes': row[70], \
                         'calculated_host_listings_count_private_rooms': row[71], 'calculated_host_listings_count_shared_rooms': row[72], 'reviews_per_month': row[73]})
 file.close()
 
