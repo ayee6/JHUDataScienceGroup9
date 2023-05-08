@@ -93,43 +93,11 @@ datawarehouse.py
 
 ---
 
-## **Peer Evaluations:** 
-### Author: Jack Mentch
+## **Peer Evaluations:**
 | team member  | score | comments | 
 | ------------ | ----- | -------- | 
-| Steve Bischoff  | 5/5 | Steve was extremely attentive throughout the lifetime of the project. He served as the leader of the team and made major contributions to the final project. The contributions he made demonstrated a strong working knowledge of the material this class covered |
-| Andrew Yee  | 5/5 | Andrew collaborated effectively with others and incorporate different perspectives into our work. He was also a huge asset, as it helped us to produce a more well-rounded and comprehensive final product. The contributions he made demonstrated a strong working knowledge of the material this class covered |  
-| Suwat Chritamara  | 5/5 | Suwat helped the team with numerous contributions. He was incredibly attentive and helpful with addressing questions and problems in the team group chat. His work on this project has demonstrated a strong working knowledge of the material this class covered |  
-| Vy Vu  | 5/5 | Vy was instrumental in guiding the team through each step of the project. She helped keep the team organized and made major contributions at each point along the way. Her work has demonstrated a strong understanding of the core data science fundamentals |
-
-### Author: Steve Bischoff
-| team member  | score | comments | 
-| ------------ | ----- | -------- | 
-| Jack Mentch  | /5 |  |
-| Andrew Yee  | /5 |  |  
-| Suwat Chritamara  | /5 |  |  
-| Vy Vu  | /5 |  |
-
-### Author: Andrew Yee
-| team member  | score | comments | 
-| ------------ | ----- | -------- | 
-| Jack Mentch  | /5 |  |
-| Steve Bischoff  | /5 |  |  
-| Suwat Chritamara  | /5 |  |  
-| Vy Vu  | /5 |  |
-
-### Author: Suwat Chritamara
-| team member  | score | comments | 
-| ------------ | ----- | -------- | 
-| Jack Mentch  | /5 |  |
-| Steve Bischoff  | /5 |  |  
-| Andrew Yee  | /5 |  |  
-| Vy Vu  | /5 |  |
-
-### Author: Vy Vu
-| team member  | score | comments | 
-| ------------ | ----- | -------- | 
-| Jack Mentch  | /5 |  |
-| Steve Bischoff  | /5 |  |  
-| Andrew Yee  | /5 |  |  
-| Suwat Chritamara  | /5 |  |
+| Jack Mentch  | /5 | add comments here |
+| Steve Bischoff  | /5 | add comments here |
+| Andrew Yee  | /5 | add comments here |  
+| Suwat Chritamara  | /5 | add comments here |  
+| Vy Vu  | /5 | add comments here |
