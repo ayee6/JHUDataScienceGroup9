@@ -8,10 +8,10 @@
 
 ## **Exploratory Data Analysis:** 
 
-- [ ] neighborhoods
-- [x] reviews <i>(in progress @Jack)</i>
-- [ ] listings <i>(in progress @Vy)</i>
-- [ ] calendar
+- [x] neighborhoods
+- [x] reviews 
+- [x] listings 
+- [x] calendar
 
 <br>
 
@@ -22,7 +22,7 @@
 
 
 ### **Neighbourhoods Table:** 
-###### source data: **neightbourhoods.xlsx**
+###### source data: **neightbourhoods.csv**
 | id  | name |
 | --- | ---- |
 | 1  | Capitol Hill, Lincoln Park  |
@@ -31,7 +31,7 @@
 | ...  | ...  |
 
 ### **Calendar Table:** 
-###### source data: **calendar.xlsx**
+###### source data: **calendar.csv**
 | id  | listing_id | date | available | price | adjusted_price | minimum_nights | maximum_nights |
 | --- | ---------- | ---- | --------- | ----- | -------------- | -------------- | -------------- |
 | 1  | 3686 | 3/19/2023  | t | $67.00 | $67.00 | 31 | 365 |
@@ -40,7 +40,7 @@
 | ...| ...  | ... | ... | ... | ... | ... | ... |
 
 ### **Reviews Table:** 
-###### source data: **reviews.xlsx**
+###### source data: **reviews.csv**
 | id  | listing_id | date | reviewer_name | reviewer_id | comments | 
 | --- | ---------- | ---- | ------------- | ----------- | -------- |
 | 1  | 3686 | 3/19/2023  | Adam | 324502 | This home is beautiful, modern and spotless!  |
@@ -49,7 +49,7 @@
 | ...| ...  | ... | ... | ... | ... | ... | ... |
 
 ### **Listings Table:** </u> 
-###### source data: **listings.xlsx**
+###### source data: **listings.csv**
 | id  | listing_id | scrape_url | last_scraped | * | reviews_per_month | 
 | --- | ---------- | ---- | --------- | ----- | -------------- | 
 | 1  | 22229408 | https://www.airbnb.com/rooms/22229408  | 3/19/2023 | ... | 0.32 |  
