@@ -15,6 +15,24 @@
 
 <br>
 
+## **How To Generate Database:** 
+
+#### 1. cd into the project directory
+```console
+cd JHUDataScienceGroup9
+``` 
+
+#### 2. generate the database schema
+```console
+sqlite3 airbnb.db
+sqlite> .read airbnb.sql
+``` 
+#### 3. populate the database
+```console
+load.py
+``` 
+
+
 ## **airbnb.db** 
 ###### Database that contains **4 Tables**: Neighbourhoods, Calendar, Reviews, and  Listings
 
