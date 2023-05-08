@@ -29,7 +29,7 @@ sqlite> .read airbnb.sql
 ``` 
 #### 3. populate the database
 ```console
-load.py
+datawarehouse.py
 ``` 
 
 
