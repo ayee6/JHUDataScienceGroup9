@@ -7,7 +7,7 @@
     - Jack Mentch
 
 ## **Exploratory Data Analysis:** 
-
+#### <i>all EDA is located in **eda.ipynb**</i>
 - [x] neighborhoods
 - [x] reviews 
 - [x] listings 
@@ -15,7 +15,7 @@
 
 <br>
 
-## **How To Generate Database:** 
+## **How To Generate Database (airbnb.db):** 
 
 #### 1. cd into the project directory
 ```console
@@ -32,6 +32,7 @@ sqlite> .read airbnb.sql
 datawarehouse.py
 ``` 
 
+<br>
 
 ## **airbnb.db** 
 ###### Database that contains **4 Tables**: Neighbourhoods, Calendar, Reviews, and  Listings
@@ -75,5 +76,60 @@ datawarehouse.py
 | 3  | 40341225 | https://www.airbnb.com/rooms/40341225  | 3/28/2023 | ... | 1.20 | 
 | ...| ...  | ... | ... | ... | ... |
 
+<br>
 
+---
 
+## **Secondary Dataset:** 
+#### Secondary datasets contain data related to recommended attractions, and their respective latitude longitude distances.
+
+#### <u>Websites: </u>
+
+- #### https://travel.usnews.com/Washington_DC/Things_To_Do/
+- #### https://www.hotels.com/go/usa/things-to-do-washington-dc
+- #### https://www.google.com/maps
+
+<br>
+
+---
+
+## **Peer Evaluations:** 
+### Author: Jack Mentch
+| team member  | score | comments | 
+| ------------ | ----- | -------- | 
+| Steve Bischoff  | 5/5 | Steve was extremely attentive throughout the lifetime of the project. He served as the leader of the team and made major contributions to the final project. The contributions he made demonstrated a strong working knowledge of the material this class covered |
+| Andrew Yee  | 5/5 | Andrew collaborated effectively with others and incorporate different perspectives into our work. He was also a huge asset, as it helped us to produce a more well-rounded and comprehensive final product. The contributions he made demonstrated a strong working knowledge of the material this class covered |  
+| Suwat Chritamara  | 5/5 | Suwat helped the team with numerous contributions. He was incredibly attentive and helpful with addressing questions and problems in the team group chat. His work on this project has demonstrated a strong working knowledge of the material this class covered |  
+| Vy Vu  | 5/5 | Vy was instrumental in guiding the team through each step of the project. She helped keep the team organized and made major contributions at each point along the way. Her work has demonstrated a strong understanding of the core data science fundamentals |
+
+### Author: Steve Bischoff
+| team member  | score | comments | 
+| ------------ | ----- | -------- | 
+| Jack Mentch  | /5 |  |
+| Andrew Yee  | /5 |  |  
+| Suwat Chritamara  | /5 |  |  
+| Vy Vu  | /5 |  |
+
+### Author: Andrew Yee
+| team member  | score | comments | 
+| ------------ | ----- | -------- | 
+| Jack Mentch  | /5 |  |
+| Steve Bischoff  | /5 |  |  
+| Suwat Chritamara  | /5 |  |  
+| Vy Vu  | /5 |  |
+
+### Author: Suwat Chritamara
+| team member  | score | comments | 
+| ------------ | ----- | -------- | 
+| Jack Mentch  | /5 |  |
+| Steve Bischoff  | /5 |  |  
+| Andrew Yee  | /5 |  |  
+| Vy Vu  | /5 |  |
+
+### Author: Vy Vu
+| team member  | score | comments | 
+| ------------ | ----- | -------- | 
+| Jack Mentch  | /5 |  |
+| Steve Bischoff  | /5 |  |  
+| Andrew Yee  | /5 |  |  
+| Suwat Chritamara  | /5 |  |
